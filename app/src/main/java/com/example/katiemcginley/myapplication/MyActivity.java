@@ -65,4 +65,5 @@ public class MyActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+    
 }
