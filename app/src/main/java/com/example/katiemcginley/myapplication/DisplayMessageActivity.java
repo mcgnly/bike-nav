@@ -1,5 +1,6 @@
 package com.example.katiemcginley.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,5 +27,6 @@ public class DisplayMessageActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
+Intent intent = getIntent();
+    String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 }
